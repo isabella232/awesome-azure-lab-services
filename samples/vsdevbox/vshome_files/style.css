@@ -1,0 +1,3566 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+
+*/
+
+/*--------------------*/
+
+/* RESETS             */
+
+/*--------------------*/
+
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #0067B7;
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.focus,
+a:focus,
+.x-hidden-focus {
+  /* Mozilla focus */
+  -moz-user-focus: normal;
+}
+
+p {
+  padding: 0;
+  font-size: 18px;
+  font-family: 'MS-Font-Segoe';
+  font-weight: 400;
+  line-height: 1.61;
+  letter-spacing: 0px;
+}
+
+/*--------------------*/
+
+/* CORE LAYOUT        */
+
+/*--------------------*/
+
+/* UHF STYLES */
+
+@media screen and (min-width: 768px) {
+    .c-uhfh>div+div>div>.c-call-to-action {
+        margin-top: 3.5px !important;
+    }
+}
+
+a.c-call-to-action span, button.c-call-to-action span {
+    font-weight: normal;
+}
+
+.vscom-block {
+  display: block;
+}
+
+.vscom-half-width {
+  width: 50%;
+}
+
+.vscom-hidden {
+  display: none;
+}
+
+.fusion-page-title-bar,
+.fusion-button-wrapper .mac{
+  display:none;
+}
+
+
+/*---------------------*/
+
+/* MODULES             */
+
+/*---------------------*/
+
+/*---------------------*/
+
+/* MODULE vscom-swimlane */
+
+/*---------------------*/
+
+/*--------------------*/
+
+/* LAYOUT vscom-swimlane */
+
+/*--------------------*/
+
+.vscom-swimlane {
+  /* overriding inline styles */
+  padding: 2rem !important;
+}
+.vscom-swimlane-title,
+.vscom-swimlane-subtitle {
+  /* overriding global #835 */
+  margin: 0 0 15px 0 !important;
+}
+
+.vscom-swimlane-valueprop {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+}
+
+/* --final-cta variant */
+.vscom-swimlane--final-cta {
+  padding: 1.5rem 2rem !important;
+}
+
+.vscom-swimlane--final-cta .fusion-text {
+  text-align: center;
+}
+
+/* --reduced-padding variant */
+.vscom-swimlane--reduced-padding {
+  /* overriding inline styles */
+  padding: 1rem !important;
+}
+
+/* --center-text variant */
+
+.vscom-swimlane--center-text .fusion-text {
+  text-align: center;
+}
+
+/* --add 10% padding to column */
+.vscom-swimlane-text-content--10pad .fusion-column-wrapper{
+  padding:10% !important;
+}
+/* --for banner in front page and swimlane pages */
+.vscom-swimlane--banner{
+  margin: 0 !important;
+}
+  
+/*--------------------*/
+
+/* THEME vscom-swimlane */
+
+/*--------------------*/
+
+.whitelane,
+.vscom-swimlane {
+  /* !important to override generated inline css */
+  background-color: #FFF !important;
+}
+
+.vscom-swimlane-title > h2,
+.vscom-swimlane-title > h3 {
+  /* overriding global CSS */
+  font-size: 2.125rem !important;
+}
+
+.vscom-swimlane-subtitle > h3 {
+  font-size: 1.5rem !important;
+}
+
+/* --gray variant */
+.greylane,
+.vscom-swimlane--graylane {
+  /* !important to override generated inline css */
+  background-color: #F1F1F1 !important;
+}
+
+/* --final-cta variant */
+
+.vscom-swimlane--final-cta {
+  background-color: #3A5068 !important;
+  /* overriding fusion inline */
+}
+
+.vscom-swimlane--final-cta .vscom-swimlane-title * {
+  color: #FFF;
+  font-family: 'MS-Font-Segoe-Regular';
+  font-size: 1.45rem !important; /* override fusion CSS */
+}
+
+.vscom-swimlane .vscom-swimlane-title--thin h4 {
+  color: #FFF;
+  font-size: 1.45rem !important; /* override fusion CSS */
+}
+
+.vscom-swimlane--final-cta .fusion-text,
+.vscom-swimlane--final-cta .fusion-text a {
+  color: #FFF;
+}
+
+.vscom-swimlane--final-cta .fusion-text a {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* --small-header variant */
+
+.vscom-swimlane--small-header .vscom-swimlane-title * {
+  font-size: 1.875rem;
+}
+
+/*--------------------*/
+
+/* MODULE vscom-swimlane-content  */
+
+/*--------------------*/
+
+/*--------------------*/
+
+/* LAYOUT             */
+
+/*--------------------*/
+
+.vscom-swimlane-content {
+  display: flex;
+}
+
+.vscom-swimlane-content .fusion-one-half {
+  width: 48%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.vscom-swimlane-content .fusion-column-first {
+  margin-right: 4%;
+}
+
+@media screen and (max-width: 800px) {
+  .vscom-swimlane-content {
+    display: block;
+  }
+
+  .vscom-swimlane-content .fusion-column-first {
+    margin-bottom: 1rem;
+  }
+}
+
+/*--------------------*/
+
+/* MODULE vscom-hero  */
+
+/*--------------------*/
+
+/*--------------------*/
+
+/* LAYOUT             */
+
+/*--------------------*/
+
+.vscom-hero {
+  /* overriding inline styles @ 45px, preserving current look and feel */
+  padding: 2.813rem !important;
+}
+
+.vscom-hero-sep {
+  margin-bottom: 3.75rem;
+}
+
+.vscom-hero .os.mac {
+  /* default to windows, .os.mac avoids hitting switchers in favor of switchable content only */
+  display: none;
+}
+
+.vscom-hero-title {
+  margin: 1rem 0 !important;
+}
+.vscom-hero-imgcol,
+.vscom-hero-textcol {
+  /* overriding inline styles */
+  margin-top: 0px !important;
+}
+
+.vscom-hero-title p {
+  /*
+    this rule is just in case wordpress tries to be clever, which it has been known to do
+    on occasion. it likes to add <p> tags where it pleases.
+  */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --home variant layout */
+
+.vscom-hero.vscom-hero--home {
+  margin: 0;
+  padding: 6rem 2.183rem !important;
+}
+
+.vscom-hero--home .fusion-row {
+  max-width: 1400px !important; /* overriding rule using #main */
+}
+
+.vscom-hero--home .vscom-hero-title {
+  margin: 0 !important;
+}
+
+.vscom-hero--home .vscom-hero-textcol p {
+  margin-left: 1.4rem;
+  margin-bottom: 6.8rem;
+}
+
+.vscom-hero--home .small-text {
+  line-height: 1.2;
+  width: 100%;
+  font-size: 0.6rem;
+  position: absolute;
+}
+
+/* --FEATURE Variant Layout */
+
+.vscom-hero--feature {
+  padding: 0 !important;
+}
+
+.vscom-hero--feature p {
+  /* wordpress likes adding its own <p> tags */
+  margin: 0;
+}
+
+.vscom-hero--feature .vscom-hero-textcol {
+  padding: 7.5rem 0 7.5rem 30px;
+}
+
+.vscom-hero--feature .vscom-hero-textcol--title {
+  padding-bottom: 0 !important;
+}
+
+.vscom-hero--feature .vscom-hero-logo {
+  width: 60px;
+  height: auto;
+}
+
+.vscom-hero--feature .vscom-hero-textcol--content {
+  padding-top: 0 !important;
+}
+
+.vscom-hero--feature .vscom-hero-imgcol {
+  position: absolute;
+  right: -35%;
+  bottom: 0;
+  overflow: visible;
+}
+
+.vscom-hero--feature .vscom-hero-imgcol .fusion-column-wrapper {
+  /*
+    sort of a magic number, which isn't great
+    the image needs a static size at desktop resolution, 1000px happens to work
+  */
+  width: 1000px;
+}
+
+.vscom-hero--feature .vscom-hero-valueprop {
+  width: 75%;
+}
+
+.vscom-hero--feature .vscom-hero-imgcol .vscom-switchable-content {
+  display: block;
+}
+
+/*--------------------*/
+
+/* THEME             */
+
+/*--------------------*/
+
+.vscom-hero {
+  /* overriding inline styles */
+  background-color: #2C3E58 !important;
+}
+
+.vscom-hero-textcol,
+.vscom-hero-textcol .vscom-hero-valueprop,
+.vscom-hero-textcol a,
+.vscom-hero-textcol a:hover,
+.vscom-hero-textcol a:focus,
+.vscom-hero-textcol a:active,
+.vscom-hero-textcol a:visited,
+.vscom-hero-textcol .fusion-title * {
+  color: #FFF;
+}
+
+.vscom-hero-title * {
+  font-size: 2.875rem !important; /* overriding inline css */
+}
+.vscom-hero-valueprop {
+  font-size: 1.25rem; /* replace with fontramp designation */
+}
+
+/* --home variant */
+
+.vscom-hero--home {
+  display: block;
+}
+
+.vscom-hero--home::before {
+  content: "";
+  background: url('/wp-content/uploads/2018/05/visual-studio-hero-banner.jpg');
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.70;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute; 
+}
+
+.vscom-hero--home .vscom-hero-title h1 {
+  font-family: 'MS-Font-Segoe-Bold';
+  font-weight: 800;
+  font-size: 6rem !important;
+  line-height: 1 !important;
+}
+
+.vscom-hero--home .vscom-hero-textcol p {
+  font-family: 'MS-Font-Segoe-Regular';
+  font-weight: 400;
+  font-size: 2.125rem !important;
+  line-height: 1 !important;
+}
+
+/* --feature variant */
+
+.vscom-hero--feature {
+  /* overriding line 252 */
+  background-color: #FFF !important;
+}
+
+.vscom-hero--feature .vscom-hero-textcol,
+.vscom-hero--feature .vscom-hero-textcol .title-heading-left,
+.vscom-hero--feature .vscom-hero-textcol .vscom-hero-valueprop {
+  color: #000;
+}
+
+/*--------------------*/
+
+/* MEDIA QUERIES      */
+
+/*--------------------*/
+@media screen and (min-width: 2000px) {
+  .vscom-hero--home::before {
+    background: url('/wp-content/uploads/2018/05/visual-studio-hero-banner@2x.jpg');
+    background-size: cover;
+    background-position: top center;
+  } 
+}
+
+@media screen and (max-width: 1000px) {
+  .vscom-hero--home .vscom-hero-textcol,
+  .vscom-hero--home .vscom-hero-textcol .vscom-hero-title .title-heading-left {
+    text-align: center;
+  }
+  .vscom-hero--home .vscom-hero-textcol p {
+    margin-left: auto;
+  }
+  .vscom-hero--home::before {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*--------------------*/
+  /* LAYOUT             */
+  /*--------------------*/
+  .vscom-hero-textcol {
+    padding: 2rem 0;
+  }
+  .vscom-hero-textcol,
+  .vscom-hero-textcol .vscom-hero-title .title-heading-left {
+    text-align: center;
+  }
+  .vscom-hero-textcol--title .fusion-column-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+  }
+  .vscom-hero-textcol--title .vscom-hero-title,
+  .vscom-hero-textcol--title .vscom-hero-logo {
+    flex: 0 1 auto;
+  }
+  .vscom-hero-textcol--title .vscom-hero-title {
+    padding-left: 1rem;
+  }
+  /* --FEATURE Variant Layout */
+  .vscom-hero--feature .vscom-hero-textcol {
+    padding: 3rem 0 3rem 0;
+  }
+  .vscom-hero--feature .vscom-hero-imgcol {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100% !important;
+  }
+  .vscom-hero--feature .vscom-hero-imgcol .fusion-column-wrapper {
+    width: 100%;
+  }
+  .vscom-hero--feature .vscom-hero-imgcol .fusion-imageframe {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .vscom-hero--feature .vscom-hero-valueprop {
+    margin: auto;
+  }
+  /* --home */
+  .vscom-hero.vscom-hero--home {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .vscom-hero--home .vscom-hero-textcol p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .vscom-hero--home .vscom-hero-title > h1 {
+    font-size: 4.555em !important;
+  }
+  .vscom-hero--home .vscom-hero-textcol p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .vscom-hero--home .vscom-hero-title > h1 {
+    font-size: 3em !important;
+  }
+  .vscom-hero--home .vscom-hero-textcol p {
+    font-size: 1rem !important;
+  }
+}
+
+/*--------------------*/
+
+/* MODULE fusion-tabs */
+
+/*--------------------*/
+
+/*--------------------*/
+
+/* LAYOUT             */
+
+/*--------------------*/
+
+.fusion-tabs .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fusion-tabs .nav .nav-tabs li {
+  flex: 1 1 auto;
+}
+
+.fusion-tabs .nav-tabs li .tab-link {
+  /* specificity level for override */
+  margin-bottom: 3px;
+}
+
+.fusion-tabs .fusion-tab-image {
+  width: 10rem;
+  height: auto;
+}
+
+/* --dark variant */
+
+.fusion-tabs--dark .nav-tabs {
+  justify-content: flex-start;
+}
+
+.fusion-tabs--dark .nav-tabs li .tab-link {
+  margin-bottom: 6px;
+  padding: 2em 1.25em 0.5em 1.25em;
+}
+
+/* --short-content variant */
+
+.fusion-tabs--short-content {
+  margin-bottom: 0;
+}
+
+.fusion-tabs--short-content .tab-content {
+  max-height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* --large-image variant */
+
+.fusion-tabs--large-image .fusion-tab-image {
+  height: auto;
+  width: 8.5rem;
+}
+
+/* mobile tab layout */
+
+.fusion-tabs .fusion-mobile-tab-nav .nav-tabs li {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.fusion-tabs .fusion-mobile-tab-nav li .tab-link {
+  padding: 0.75rem 1.5rem;
+}
+
+/*--------------------*/
+
+/* THEME              */
+
+/*--------------------*/
+
+.fusion-tabs .nav-tabs li .tab-link {
+  border-top: 0;
+  background-color: transparent !important;
+}
+
+#wrapper .fusion-tabs.clean .nav-tabs li .tab-link {
+  /* overqualified to override fusion generated inline CSS */
+  border: 0px;
+}
+
+.fusion-tabs .nav-tabs.nav-justified,
+.fusion-tabs.horizontal-tabs.clean .nav-tabs {
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.fusion-tabs .tab-content .tab-pane.active {
+  border: none;
+}
+
+/* --dark variant */
+
+.fusion-tabs--dark .nav {
+  /* overriding inline styles */
+  background-color: #333 !important;
+}
+
+.fusion-tabs--dark .nav .nav-tabs {
+  /* overriding inline styles */
+  border: none !important;
+}
+
+.fusion-tabs--dark .nav-tabs .tab-link .fusion-tab-heading {
+  color: #FFF;
+  font-family: 'MS-Font-Segoe-Regular';
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.fusion-tabs--dark .tab-content,
+.fusion-tabs--dark .tab-content .tab-pane {
+  /* overriding inline styles */
+  background-color: #f1f1f1 !important;
+}
+
+/* --short-content variant */
+
+.fusion-tabs--short-content .tab-content p,
+.fusion-tabs--short-content .tab-content code {
+  font-size: 0.8rem;
+}
+
+/*--------------------*/
+
+/* STATE              */
+
+/*--------------------*/
+
+#wrapper .fusion-tabs.clean .nav-tabs li.active .tab-link,
+.fusion-tabs.classic .nav-tabs li.active .tab-link {
+  /* overqualified to override fusion generated inline CSS */
+  border-top: 0px;
+  border-bottom: 3px solid #0067B7;
+  margin-bottom: 0;
+}
+#wrapper .fusion-tabs.clean .nav-tabs li .tab-link:focus,
+.fusion-tabs.classic .nav-tabs li .tab-link:focus {
+  text-decoration: underline;
+}
+.fusion-tabs .nav-tabs li .fusion-tab-heading:hover {
+  font-family: 'MS-Font-Segoe-Regular';
+}
+
+/* --dark variant */
+
+#wrapper .fusion-tabs--dark.clean .nav-tabs li.active .tab-link,
+.fusion-tabs--dark.classic .nav-tabs li.active .tab-link {
+  border-bottom: 6px solid #CB2E6D !important;
+}
+#wrapper .fusion-tabs--dark.clean .nav-tabs li .tab-link:focus,
+.fusion-tabs--dark.classic .nav-tabs li .tab-link:focus {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+.fusion-tabs--dark.classic .nav-tabs li .fusion-tab-heading:hover {
+  font-weight: 600;
+}
+
+/*--------------------*/
+
+/* MODULE fusion-button */
+
+/*--------------------*/
+
+/*--------------------*/
+
+/* LAYOUT fusion-button */
+
+/*--------------------*/
+
+.fusion-button--small-bottom-margin {
+  margin-bottom: 1rem;
+}
+
+.fusion-button--unified-cta {
+  min-width: 13.5rem;
+  text-align: left;
+}
+
+.fusion-button--unified-cta .button-icon-right {
+  float: right;
+  padding-top: 2px;
+  margin-left: auto;
+}
+
+/*--------------------*/
+
+/* THEME fusion-button */
+
+/*--------------------*/
+
+.fusion-button--white-cta {
+  background-color: #FFF !important;
+}
+
+.fusion-button--white-cta .fusion-button-text {
+  color: #000 !important;
+}
+
+.fusion-button--white-cta .fa {
+  color: #0067B8 !important;
+}
+
+/*--------------------*/
+
+/* STATE fusion-button */
+
+/*--------------------*/
+
+.fusion-button--white-cta:hover {
+  background-color: #E6E6E6 !important;
+}
+
+.fusion-button.button-medium:hover {
+  /*
+    overriding some global.css media query that is misbehaving
+    line #5390 .fusion-button.button-1:hover
+  */
+  line-height: 22.5px !important; /* px for exactness for now */
+  font-size: 18px; /* px for exactness for now */
+  padding: 11px 23px !important;
+}
+
+.fusion-button--white-cta.button-medium:hover {
+  /*
+    overriding some global.css media query that is misbehaving
+    line #5390 .fusion-button.button-1:hover
+  */
+  line-height: 1rem;
+  font-size: 0.813rem;
+  padding: 11px 23px !important;
+}
+
+/*--------------------*/
+
+/* MODULE vscom-dropdown-button  */
+
+/*--------------------*/
+
+/*--------------------*/
+
+/* LAYOUT vscom-dropdown-button */
+
+/*--------------------*/
+
+.dropdown-button,
+.vscom-dropdown-button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.vscom-subnav {
+  display: none;
+}
+
+.dropdown-button li,
+.vscom-dropdown-button li {
+  position: relative;
+  display: block;
+  z-index: 10;
+}
+
+.dropdown-button li a,
+.vscom-dropdown-button li a {
+  display: block;
+  text-align: center;
+  padding: 10px 23px;
+}
+
+.dropdown-button .vscom-subnav,
+.vscom-dropdown-button .vscom-subnav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-button .toplink,
+.vscom-dropdown-button .toplink {
+  padding: 0.5rem 1.25rem;
+}
+
+/* --full variant */
+
+.vscom-dropdown-button--full {
+  display: block;
+  text-align: center;
+}
+
+/* --unified-cta variant */
+
+.vscom-dropdown-button--unified-cta {
+  min-width: 13.5rem;
+}
+
+.vscom-dropdown-button--unified-cta .toplink {
+  text-align: left;
+}
+
+.vscom-dropdown-button--unified-cta .button-icon-right {
+  float: right;
+  padding-top: 2px;
+  margin-left: auto;
+}
+
+/*--------------------*/
+
+/* THEME vscom-dropdown-button */
+
+/*--------------------*/
+
+.dropdown-button,
+.vscom-dropdown-button {
+  background: #0067b8;
+  list-style-type: none;
+}
+
+.dropdown-button .vscom-subnav,
+.vscom-dropdown-button .vscom-subnav,
+.dropdown-button .sublink,
+.vscom-dropdown-button .sublink {
+  background: #FFF;
+  border: 1px solid #c2c2c2;
+}
+
+.dropdown-button .toplink,
+.dropdown-button .sublink,
+.vscom-dropdown-button .toplink,
+.vscom-dropdown-button .sublink {
+  text-shadow: none;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'MS-Font-Segoe-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.dropdown-button .sublink,
+.vscom-dropdown-button .sublink {
+  /* important until inline CSS can be removed from homepage */
+  color: #000 !important;
+  border-width: 0 0 1px;
+}
+
+.dropdown-button .toplink,
+.vscom-dropdown-button .toplink {
+  cursor: default;
+  color: #FFF;
+}
+
+/*--------------------*/
+
+/* STATE vscom-dropdown-button */
+
+/*--------------------*/
+
+.dropdown-button li:hover > ul,
+.dropdown-button li:focus > ul,
+.vscom-dropdown-button li:hover > ul,
+.vscom-dropdown-button li:focus > ul,
+ul.show-menu {
+  /* seems as though it doesn't work without !important when in style.css */
+  display: block !important;
+  visibility: visible !important;
+}
+
+.dropdown-button li a:hover,
+.dropdown-button li a:focus,
+.vscom-dropdown-button li a:hover,
+.vscom-dropdown-button li a:focus {
+  /* must be important as earlier font rule was as well */
+  color: #FFF !important;
+  background: #0067b8;
+}
+
+.vscom-dropdown-button a:focus {
+  outline: 1px solid #fff;
+  outline-offset: -3px;
+}
+
+/*---------------------*/
+
+/* MODULE vscom-usabilla-button */
+
+/*---------------------*/
+
+/*--------------------*/
+
+/* LAYOUT vscom-usabilla-button */
+
+/*--------------------*/
+
+.vscom-usabilla-button {
+  bottom: 75px;
+  display: block;
+  padding: 0px;
+  position:fixed !important;
+  right: -43px; /* our forced inset */
+  z-index: 99999;
+  transform: translateZ(0) rotate(-90deg);
+}
+.vscom-usabilla-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.35rem;
+}
+
+.vscom-usabilla-link {
+  padding: 0.35rem 0.8rem;
+}
+
+.vscom-usabilla-text {
+  margin: 0;
+}
+
+/*--------------------*/
+
+/* THEME vscom-usabilla-button */
+
+/*--------------------*/
+
+.vscom-usabilla-button {
+  outline: 1px solid #FFF;
+}
+
+.vscom-usabilla-button .vscom-usabilla-link {
+  background-color: #0067b8;
+  color: #FFF !important;
+}
+
+.vscom-usabilla-text {
+  font-family: 'MS-Font-Segoe-Regular';
+}
+
+/*---------------------*/
+
+/* MODULE vscom-form and form elements */
+
+/*---------------------*/
+
+/*--------------------*/
+
+/* LAYOUT vscom-form and form elements */
+
+/*--------------------*/
+
+.vscom-form {
+  display: block;
+}
+
+/* --help-chose variant */
+
+.vscom-form--help-choose {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.vscom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 2rem;
+}
+
+.vscom-select::-ms-expand {
+  display: none;
+  /* hide the default arrow in ie10 and ie11 */
+}
+
+.vscom-select-wrapper {
+  position: relative;
+}
+
+.vscom-select-wrapper::after {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1.5px 6px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+}
+
+/*--------------------*/
+
+/* THEME vscom-form and form elements */
+
+/*--------------------*/
+
+.vscom-select {
+  color: #333;
+  border: 1px solid #A6A6A6;
+  font-size: 1rem;
+}
+
+.vscom-select-wrapper::after {
+  background-color: transparent;
+  content: "\2335";
+  color: #A6A6A6;
+}
+
+/*--------------------*/
+
+/* STATE vscom-form and form elements */
+
+/*--------------------*/
+
+.vscom-select:focus {
+  outline: 1px dotted #A6A6A6;
+  outline-offset: -3px;
+}
+
+
+/*---------------------*/
+
+/* MODULE fusion-content-boxes */
+
+/*---------------------*/
+
+/*---------------------*/
+
+/* fusion-content-boxes */
+
+/*---------------------*/
+
+/*--------------------*/
+
+/* LAYOUT  */
+
+/*--------------------*/
+
+/* --home */
+
+.fusion-content-boxes--home .fusion-column {
+  width: 25%;
+  margin: 0;
+  padding: 0 12px;
+}
+
+.fusion-content-boxes--home .heading .image {
+  padding: 11px;
+}
+
+.fusion-content-boxes.fusion-content-boxes--home .heading img {
+  width: 49px;
+  height: 49px;
+  margin-right: 0;
+}
+
+.fusion-content-boxes--home .content-box-heading {
+  margin-bottom: 0.35rem !important;
+}
+
+.fusion-content-boxes--home .content-box-heading,
+.fusion-content-boxes--home .vscom-flex-start {
+  padding-left: 80px !important; /* override some inline */
+}
+
+.fusion-content-boxes--home .content-container {
+  padding: 0 !important; /* overriding inline */
+}
+
+.fusion-content-boxes.fusion-content-boxes--home .heading {
+  margin-bottom: 0;
+}
+
+.fusion-content-boxes--home .vscom-flex-start {
+  min-height: 4.3em;
+}
+
+.fusion-content-boxes--home .space,
+.fusion-content-boxes--home .psep {
+  clear: both;
+}
+
+/* --large-icon */
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon {
+  min-height: 8.5rem;
+}
+
+.fusion-content-boxes .content-container {
+  /* fusion override */
+  margin-bottom: 0;
+}
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon {
+  margin: 0 auto !important;
+  display: flex;
+}
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .fusion-column {
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .col,
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .heading {
+  width: 100% !important;
+  /* overriding fusion css */
+}
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .image {
+  max-width: 50%;
+}
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .image img {
+  width: 9rem !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .content-box-heading,
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .content-container {
+  padding-left: 10.5rem !important;
+  padding-right: 2rem !important;
+}
+
+/*--------------------*/
+
+/* THEME  */
+
+/*--------------------*/
+
+/* --home */
+
+.fusion-content-boxes--home .content-box-heading {
+  font-size: 1rem !important;
+  font-family: 'MS-Font-Segoe-Bold' !important;
+  line-height: 1 !important; /* override global #1650 */
+}
+
+.fusion-content-boxes--home .content-wrapper {
+  font-size: 0.85rem;
+}
+
+.fusion-content-boxes--home .fusion-column:nth-of-type(1) .image {
+  background-color: #865FC5;
+}
+
+.fusion-content-boxes--home .fusion-column:nth-of-type(2) .image,
+.fusion-content-boxes--home .fusion-column:nth-of-type(3) .image {
+  background-color: #0067B8;
+}
+
+.fusion-content-boxes--home .fusion-column:nth-of-type(4) .image {
+  background-color: #CB2E6D;
+}
+
+/* --large-icon */
+
+.fusion-content-boxes.content-boxes-icon-on-side--large-icon .content-box-heading {
+  font-size: 20px !important;
+  /* override inline css */
+  font-family: 'MS-Font-Segoe-Regular' !important;
+  /* overriding fusion css #main h2 */
+}
+
+/*--------------------*/
+
+/* STATE  */
+
+/*--------------------*/
+
+/* overqualified to defeat global specificity */
+.fusion-content-boxes.fusion-content-boxes--home .fusion-content-box-hover .link-area-link-icon-hover .heading h2 {
+  color: #FFF !important; /* overriding global rule */
+}
+
+/*-----------------------------*/
+
+/* MEDIA QUERIES and OVERRIDES */
+
+/*-----------------------------*/
+
+@media screen and (max-width: 1240px) {
+  .fusion-content-boxes--home .heading .image {
+    padding: 8px;
+  }
+
+  .fusion-content-boxes.fusion-content-boxes--home .heading img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+
+  .fusion-content-boxes--home .content-box-heading,
+  .fusion-content-boxes--home .vscom-flex-start {
+    padding-left: 60px !important; /* override some inline */
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .fusion-content-boxes--home .content-box-heading {
+    min-height: 2.3em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .image {
+    max-width: 80%;
+  }
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .image,
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .image img {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+  }
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .fusion-column {
+    margin: 0 auto;
+    min-height: 10rem;
+    padding: 0 0.5rem;
+  }
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .content-box-heading,
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .content-container {
+    padding: 0 !important;
+    text-align: center;
+  }
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .content-box-heading {
+    padding-top: 1rem !important;
+  }
+
+  /* --home */
+  .fusion-content-boxes--home {
+    width: calc(83.33% - 24px) !important;
+    margin: 0 auto;
+  }
+  .fusion-content-boxes--home .content-box-heading {
+    min-height: 1.3em;
+  }
+  .fusion-content-boxes.fusion-content-boxes--home .fusion-column {
+    width: 50% !important;
+  }
+  .fusion-content-boxes.fusion-content-boxes--home .fusion-column:nth-of-type(1),
+  .fusion-content-boxes.fusion-content-boxes--home .fusion-column:nth-of-type(2) {
+    margin-bottom: 3rem !important;
+  }
+  .fusion-content-boxes.fusion-content-boxes--home .fusion-column:nth-of-type(3) {
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fusion-content-boxes--home .fusion-column {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  /* --home */
+  .fusion-content-boxes--home {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon {
+    flex-direction: column;
+  }
+  .fusion-content-boxes.content-boxes-icon-on-side--large-icon .fusion-column {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .fusion-content-boxes--home {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+  .fusion-content-boxes.fusion-content-boxes--home .fusion-column {
+    clear: both;
+    margin-bottom: 3rem !important;
+    width: calc(100% - 24px) !important;
+  }
+  .fusion-content-boxes--home .heading .image {
+    padding: 11px;
+  }
+
+  .fusion-content-boxes.fusion-content-boxes--home .heading img {
+    width: 49px;
+    height: 49px;
+    margin-right: 0;
+  }
+
+  .fusion-content-boxes--home .content-box-heading,
+  .fusion-content-boxes--home .vscom-flex-start {
+    padding-left: 80px !important; /* override some inline */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .fusion-content-boxes--home {
+    width: 100% !important;
+  }
+}
+
+/*-----------------------------*/
+
+/* MODULE VSCOM OS-SWITCHER */
+
+/*-----------------------------*/
+
+/*-----------------------------*/
+
+/* Layout */
+
+/*-----------------------------*/
+
+.vscom-os-switcher, .vscom-os-switcher * {
+  zoom: 1;
+}
+
+.vscom-os-switcher {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.vscom-os-switcher .vscom-os-switcher-button {
+  cursor: pointer;
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.vscom-os-switcher .vscom-os-switcher-link {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.vscom-os-switcher .vscom-os-switcher-text {
+  font-size: inherit;
+}
+
+.vscom-os-switcher-divider {
+  width: 0px;
+}
+
+/* --FEATURE Variant Layout */
+
+.vscom-os-switcher--feature {
+  max-width: 30%;
+}
+
+.vscom-os-switcher--feature .vscom-os-switcher-button {
+  min-width: 5.75rem;
+}
+
+.vscom-os-switcher--feature .vscom-os-switcher-link {
+  padding: 0.3rem 0;
+}
+
+/* --purple variant Layout (VS) */
+
+.vscom-os-switcher--purple .vscom-os-switcher-button {
+  padding: 1px;
+}
+
+/*-----------------------------*/
+
+/* Theme */
+
+/*-----------------------------*/
+
+.vscom-os-switcher-button {
+  border: 1px solid #CCC;
+}
+
+.vscom-os-switcher-link {
+  background-color: #CCC;
+}
+
+.vscom-os-switcher-button:first-child {
+  border-right: 0;
+}
+
+.vscom-os-switcher-button:last-child {
+  border-left: 0;
+}
+
+.vscom-os-switcher-link,
+.vscom-os-switcher-link:hover,
+.vscom-os-switcher-link:focus,
+.vscom-os-switcher-text {
+  /* link and text selectors both needed, otherwise underline and text color will not match */
+  color: #000;
+  font-size: 1rem;
+}
+
+.vscom-os-switcher-divider {
+  border-right: 1px solid #0067B8;
+}
+
+/* --PURPLE Variant Theme */
+
+.vscom-os-switcher--purple .vscom-os-switcher-button {
+  border-color: #865FC5;
+}
+
+.vscom-os-switcher--purple .vscom-os-switcher-link {
+  background-color: transparent;
+}
+
+.vscom-os-switcher--purple .vscom-os-switcher-text,
+.vscom-os-switcher--purple .vscom-os-switcher-link {
+  /* link and text selectors both needed, otherwise underline and text color will not match */
+  color: #471C8B;
+}
+
+.vscom-os-switcher--purple .vscom-os-switcher-divider {
+  border-color: #865FC5;
+}
+
+/*-----------------------------*/
+
+/* State */
+
+/*-----------------------------*/
+
+.vscom-os-switcher .active {
+  outline: 1px solid #FFF;
+  outline-offset: -3px;
+}
+
+.vscom-os-switcher .active .vscom-os-switcher-link {
+  background-color: #FFF;
+}
+
+.vscom-os-switcher .active .vscom-os-switcher-link,
+.vscom-os-switcher .active .vscom-os-switcher-text {
+  color: #0067B8;
+}
+
+.vscom-os-switcher-link:hover {
+  font-family: 'MS-Font-Segoe-Regular';
+}
+
+.vscom-os-switcher-link:focus {
+  text-decoration: underline;
+}
+
+/* --purple variant */
+
+.vscom-os-switcher--purple .active {
+  border-color: #865FC5;
+}
+
+.vscom-os-switcher--purple .active .vscom-os-switcher-text {
+  color: #471C8B;
+}
+/*-----------------------------*/
+
+/* MODULE vscom-slider */
+
+/*-----------------------------*/
+
+/*
+  RESETS
+
+  bss styles are used as base styles as this slider is based off of
+  "better simple slideshow" JS and CSS
+
+  do not remove or edit these styles
+*/
+
+.bss-slides{
+  position: relative;
+  display: block; 
+  line-height: 0;/*removes the gap if you put a border on the slideshow div*/   
+}
+figcaption {
+  line-height: 1.5; /* restores line-height to the child element*/
+}
+.bss-slides:focus{
+ outline: 0;
+}
+.bss-slides figure{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bss-slides figure:first-child{
+  position: relative;
+}
+.bss-slides figure img{
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.bss-slides .bss-show{
+  z-index: 2;
+}
+.bss-slides .bss-show img{
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.bss-slides figcaption{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  bottom: .75em;
+ /* right: .35em;*/
+  padding: .25em;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .25);
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+}
+.bss-slides .bss-show figcaption{
+  z-index: 3;
+  opacity: 1;
+}
+.bss-slides figcaption a{
+  color: #fff;    
+}
+.bss-next, .bss-prev{
+  color: #fff;
+  position: absolute;
+  background: #000;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 4;
+  font-size: 2em;
+  margin-top: -1.2em;
+  opacity: .3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bss-next, .bss-prev{
+  color: #d0d0d0 !important;
+  font-size: 1.5em !important;
+  background: rgba(0,0,0, .2) !important;
+}
+.bss-next:hover, .bss-prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.bss-next{
+  right: -1px;
+  padding: 10px 5px 20px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.bss-next{
+  padding: 10px !important;
+}
+.bss-prev{
+  left: 0;
+  padding: 10px 10px 20px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.bss-prev{
+  left:10px !important;
+  padding: 10px !important;
+}
+.bss-fullscreen{
+  display: block;
+  width: 32px;
+  height: 32px;    
+  background: rgba(0,0,0,.4) url(assets/img/arrows-alt_ffffff_64.png); 
+  -webkit-background-size: contain; 
+  background-size: contain;
+  position: absolute;
+  top: 5px;
+  left: 5px;   
+  cursor: pointer;    
+  opacity: .3;
+} 
+.bss-fullscreen:hover{
+  opacity: .8;   
+}
+:-webkit-full-screen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+:-moz-full-screen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    background-size: contain;
+}
+:-ms-fullscreen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    background-size: contain;
+}
+:full-screen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+:-webkit-full-screen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+:-moz-full-screen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    background-size: contain;
+}
+:-ms-fullscreen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    background-size: contain;
+}
+:fullscreen .bss-fullscreen{
+    background: rgba(0,0,0,.4) url(assets/img/compress_ffffff_64.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+/*
+  end bss base styles
+  you may edit styles below this line
+*/
+.vscom-slider{
+  margin-right:15px;
+}
+.vscom-slide-text {
+  max-width: 41rem;
+}
+
+
+.bss-pause{
+  color:#d0d0d0 !important;
+  background: rgba(0,0,0, .2) !important;
+}
+.bss-pause span.pause{
+  
+  display:block;
+  width:0.55em;
+  height:0.9em;
+  background: url('../../../wp-content/plugins/vscom-fusion-extension/assets/images/vscom-slider-pause.png') no-repeat !important;
+  background-position: center; 
+  background-size:0.5em 1.3em !important;
+}
+.bss-pause span.play{
+ 
+  display:block;
+  width:0.6em;
+  height:1.1em;
+  background: url('../../../wp-content/plugins/vscom-fusion-extension/assets/images/vscom-slider-play.png') no-repeat !important;
+  background-position: center; 
+  background-size:0.6em 1.1em !important;
+}
+.bss-pause:hover, .bss-pause:focus{
+  color:#d0d0d0 !important;
+  background: rgba(0,0,0, .2);
+}
+
+/*-----------------------------*/
+
+/* LAYOUT */
+
+/*-----------------------------*/
+
+.vscom-slider-wrapper,
+.vscom-slider-slides-wrapper,
+.vscom-slider-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.vscom-slider-slide {
+  margin: 0;
+  overflow: hidden;
+}
+
+.vscom-slider-slide {
+  height: 100%
+}
+
+.vscom-slide-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.vscom-slide-caption {
+  top: 1.5em;
+  padding: 0;
+  left: calc(50vw - 700px);
+}
+
+.vscom-slider-jump-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 18rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 100;
+  align-content: flex-start;
+}
+
+.bss-next {
+  right: 18rem; /* offset matches jump list width */
+}
+
+.vscom-slider-jump-item {
+  flex: 0 0 50%;
+  height: 33.33%;
+}
+
+.vscom-slider-jump-link {
+  display: flex !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.vscom-jump-link-text {
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 0.6em;
+  line-height: 100%;
+}
+
+.vscom-link-text-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vscom-jump-placeholder-filler {
+  width: 100%;
+  height: 100%;
+}
+
+.bss-pause {
+  position: absolute;
+  bottom: 1rem;
+  left: calc(50% - 10rem); /* minus width of jump list */
+  z-index: 100000;
+  padding: 0.5rem;
+}
+
+/* --standard-height variant */
+
+.vscom-slider--standard-height {
+  height: 25rem; /* 5px bottom border */
+}
+
+.vscom-slider--standard-height .bss-next, 
+.vscom-slider--standard-height .bss-prev{
+  top: 13.75rem;
+}
+
+/*-----------------------------*/
+
+/* THEME */
+
+/*-----------------------------*/
+
+.vscom-slider {
+  font-size: 1.25rem;
+}
+
+.vscom-slider-slide {
+  border-top: 4px solid #FFF;
+  border-bottom: 4px solid #FFF;
+}
+
+.vscom-slider-slide .vscom-slide-caption {
+  background-color: transparent;
+}
+
+.vscom-slider-jump-list {
+  list-style: none;
+  border: 2px solid #FFF;
+  border-right: 0;
+}
+
+.vscom-slider-jump-link {
+  background-color: rgba(239, 239, 239, 0.95);
+}
+
+.vscom-jump-placeholder-filler,
+.vscom-link-text-wrapper {
+  border: 2px solid #FFF;
+}
+
+.vscom-slider-jump-item--placeholder:nth-of-type(even) .vscom-jump-placeholder-filler,
+.vscom-slider-jump-item:nth-of-type(even) .vscom-link-text-wrapper {
+  border-right: 0;
+}
+
+.vscom-slider-jump-item--placeholder {
+  background-color: rgba(239, 239, 239, 0.55);
+}
+
+.vscom-jump-link-text,
+.vscom-slide-title,
+.vscom-slide-text {
+  color: #000;
+  font-family: 'MS-Font-Segoe-Regular' !important;
+}
+
+.vscom-slide-title {
+  /* marked important to defeat fusion rule with #main in it */
+  font-size: 2.688em !important;
+  line-height: 100% !important;
+}
+
+.vscom-slide-text h4 {
+  font-size: 1.7em !important;
+  margin-top:0.8em;
+  margin-bottom:0.8em;
+  font-weight:normal;
+  
+}
+
+.vscom-slider-jump-list {
+  font-size: 1rem;
+}
+
+.vscom-jump-link-text,
+.vscom-slide-text p {
+  font-size: 1em;
+  margin-bottom:0! important;
+}
+
+.bss-pause {
+  color: #FFF;
+  background-color: rgba(0,0,0, .6);
+}
+
+.vscom-slide-text a{
+display:inline-block;
+margin-top:1.5rem;
+background: #fff;
+padding: 0.25em 0.75em;
+color:#000 !important;
+font-weight:600;
+
+}
+
+.vscom-slide-text a .button-icon-right{
+  color:#0067B8 !important;
+  font-weight:bold;
+}
+
+.vscom-tag{
+  font-family:'MS-Font-Segoe-Regular';
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight:500;
+  padding: 0.25em 0.75em;
+  margin-bottom: 1rem;
+  color:#000;
+}
+
+.vscom-tag-pink {
+  background-color:rgb(248,80,148);
+}
+
+.vscom-tag-yellow{
+  background: rgb(246, 220, 51);
+}
+
+.vscom-tag-purple{
+  background:rgb(156,137,233);
+}
+
+.vscom-tag-orange{
+  background: rgb(224, 150, 192);
+}
+
+/* --light-text */
+.vscom-slider-slide--light-text .vscom-slide-title,
+.vscom-slider-slide--light-text .vscom-slide-text,
+.vscom-slider-slide--light-text .vscom-slide-text h1,
+.vscom-slider-slide--light-text .vscom-slide-text h2,
+.vscom-slider-slide--light-text .vscom-slide-text h3,
+.vscom-slider-slide--light-text .vscom-slide-text h4,
+.vscom-slider-slide--light-text .vscom-slide-text h5,
+.vscom-slider-slide--light-text .vscom-slide-text h6,
+.vscom-slider-slide--light-text .vscom-slide-text p {
+  color: #FFF;
+}
+
+/* STATE overrides */
+
+.bss-next, .bss-prev {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.vscom-slider:hover .bss-next,
+.vscom-slider:hover .bss-prev {
+  opacity: 1;
+}
+
+.bss-pause:hover,
+.bss-pause:focus {
+  cursor: pointer;
+  color: #FFF;
+  background: #000;
+}
+.bss-pause:hover,
+.bss-pause:focus{
+  color:#d0d0d0;
+}
+.vscom-slider-jump-link.active {
+  background-color: rgba(51, 51, 51, 0.8);
+  outline: 1px solid rgba(51, 51, 51, 0);
+  outline-offset: -3px;
+}
+
+.vscom-slider-jump-link.active .vscom-jump-link-text {
+  color: #FFF;
+}
+
+.vscom-slider-jump-link:hover {
+  font-weight: bold;
+}
+
+.vscom-slider-jump-link:focus .vscom-jump-link-text {
+  text-decoration: underline;
+}
+.vscom-slider-jump-link:focus .vscom-jump-link-text {
+  text-decoration: none !important;
+}
+/*----------------------------------*/
+
+/* MEDIA QUERIES and OVERRIDES      */
+
+/*----------------------------------*/
+
+@media only screen and (max-width: 1400px){
+  .vscom-slide-caption {
+    left: 2em;
+  }
+
+  .vscom-slide-text p{
+    max-width: 24em;
+    font-size:1rem;
+  }
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .vscom-slide-text a{
+    margin-top:0.5rem;
+   }
+
+   
+  .bss-next, .bss-prev{
+    display:none;
+  }
+
+  .vscom-slider{
+    margin-right:0 !important; 
+  }
+
+  .vscom-slide-title{
+    font-size:1.6rem !important;
+  }
+
+  .vscom-slide-text h4 {
+    font-size: 1.2rem !important;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    font-weight: normal;
+  }
+
+  .vscom-slide-text{
+    max-width:30em;
+  }
+
+  .vscom-slide-text p{
+    max-width: 15.5em;
+    font-size:1rem;
+  }
+
+  .bss-next {
+    right: 10px;
+  }
+
+  .bss-pause {
+    left: calc(50% - 1rem);
+    bottom: 9rem;
+  }
+
+  .vscom-slider-jump-list {
+    width: 100%;
+    height: 8rem;
+    bottom: 2px;
+    top: auto;
+  }
+
+  .vscom-slider-jump-item {
+    flex: 1 1 33.33%;
+    height: 50%;
+  }
+
+  .vscom-slider--standard-height {
+    height: 28rem; /* 25 for slide, 12 for jump list */
+  }
+
+  .vscom-slider--standard-height .vscom-slider-slides-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .vscom-slider-jump-link {
+    border-bottom: 0;
+  }
+
+  .vscom-slider-jump-item--placeholder:nth-of-type(even) .vscom-jump-placeholder-filler,
+  .vscom-slider-jump-item:nth-of-type(even) .vscom-link-text-wrapper {
+    border-right: 2px solid #FFF;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .vscom-slider-jump-item {
+    flex: 1 1 33.33%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  .bss-pause {
+    bottom: 1rem;
+  }
+
+  .vscom-slider {
+    font-size: 0.85rem;
+  }
+
+  .vscom-slider-jump-item--placeholder {
+    display: none;
+  }
+
+  .vscom-slider-jump-list {
+    height: auto;
+    width: calc(12em + 4px); /* 6 li plus spacing */
+    left: 1em;
+    bottom: 1em;
+    border: 0;
+  }
+
+  .vscom-slider-jump-item {
+    flex: 0 1 auto;
+    height: 100%;
+  }
+
+  .vscom-slider-jump-link {
+    width: auto;
+    height: auto;
+  }
+
+  .vscom-slider-jump-placeholder,
+  .vscom-link-text-wrapper {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .vscom-jump-link-text {
+    display: none;
+  }
+
+  .vscom-slider--standard-height {
+    height: 20rem; /* 18 for slide, 2 for jump list */
+  }
+
+  .vscom-slide-text{
+    margin-right:2em !important;
+  }
+
+  .vscom-slide-text h4 {
+    font-size:1.2rem !important;
+  }
+
+  .vscom-slide-title{
+    font-size:1.4rem !important;
+  }
+
+  .vscom-slider-slide{
+    background: #865FC5;
+  }
+
+  img.vscom-slide-image{
+    display:none;
+  }
+
+  .vscom-slider-jump-list {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .vscom-slider-jump-item {
+    flex: 1 1 auto;
+  }
+
+  .vscom-slider-jump-link {
+    height: 100%;
+  }
+
+  .vscom-link-text-wrapper {
+    width: 100%;
+  }
+
+  .bss-pause {
+    bottom: 2.25rem;
+  }
+
+  .vscom-slide-text p{
+    max-width: 100%;
+  }
+}
+
+/*-----------------------------*/
+
+/* MODULE VSCOM VIDEO PLAYER */
+
+/*-----------------------------*/
+
+/*-----------------------------*/
+
+/* Layout */
+
+/*-----------------------------*/
+
+.vscom-video-player-play-button {
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  padding: 0.25em 0.75em;
+}
+
+/* -- Video player button size variant */
+
+.vscom-video-player--small-button .vscom-video-player-play-button {
+   font-size: 1.5rem;
+}
+
+/*-----------------------------*/
+
+/* Theme */
+
+/*-----------------------------*/
+
+.vscom-video-player-play-button {
+  background-color: rgba(0,0,0,0.8);
+  color: #FFF;
+}
+
+/*--------------------*/
+
+/* END MODULES        */
+
+/*--------------------*/
+
+/*----------------------------------*/
+
+/* CORE THEME                       */
+
+/*----------------------------------*/
+
+/*----------------------------------*/
+
+/* CORE MEDIA QUERIES and OVERRIDES */
+
+/*----------------------------------*/
+
+.vscom-single-column {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  /* Visibility Rules */
+  .vscom-single-column {
+    display: static;
+  }
+  .vscom-no-single-column {
+    /* it's fine for this to be important, it is an override */
+    display: none !important;
+  }
+  /* Variants for different Display Property */
+  .vscom-single-column--block {
+    display: block;
+  }
+  .vscom-single-column--inline {
+    display: inline;
+  }
+  .vscom-single-column--flex {
+    display: flex;
+  }
+  .vscom-single-column--inline-block {
+    display: flex;
+  }
+}
+
+/* pre-audit CSS below */
+
+main {
+  display: block;
+}
+
+.CPTSearch {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.7rem;
+  /* replace with font ramp rule */
+}
+
+.fusion-fullwidth .fusion-row .fusion-force-center {
+  float: none;
+  margin: 0 auto;
+}
+
+.fusion-box .fusion-column-wrapper p {
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.fusion-pull-footer {
+  margin-bottom: -48px;
+}
+
+/* Learn Footer */
+
+.m-learn-footer {
+  width: 100%;
+  display: block;
+}
+
+.m-learn-footer-top,
+.m-learn-footer-bottom {
+  width: 100%;
+  min-height: 1em;
+}
+
+.m-learn-footer-top {
+  background-color: #D9E7EE;
+}
+
+.m-learn-footer-top,
+.m-learn-footer-top a:link,
+.m-learn-footer-top a:visited {
+  color: #000;
+}
+
+.m-learn-footer-bottom {
+  background-color: #14659C;
+}
+
+.m-learn-footer-bottom,
+.m-learn-footer-bottom a:link,
+.m-learn-footer-bottom a:visited {
+  color: #FFF;
+}
+
+.m-learn-footer-bottom a:link {
+  text-decoration: underline;
+}
+
+.m-learn-content {
+  width: 100%;
+  text-align: center;
+}
+
+.m-learn-content-wrapper {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  word-wrap: nowrap;
+  font-size: 1.25rem;
+}
+
+.m-learn-content-wrapper ul,
+.m-learn-content-wrapper li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.m-learn-content-wrapper ul {
+  overflow-x: hidden;
+}
+
+.m-learn-content-wrapper li {
+  display: inline-block;
+  background-color: #D9E7EE;
+  transition: 0.3s;
+}
+
+.m-learn-content-wrapper li:hover,
+.m-learn-content-wrapper li:active {
+  background-color: #BED5E5;
+}
+
+.m-learn-content-wrapper li a:focus {
+  outline-offset: -8px;
+  outline: 1px solid #BED5E5;
+  background-color: #BED5E5;
+}
+
+.m-learn-content-wrapper li a {
+  padding: 1.5em 2em;
+}
+
+.m-learn-footer-bottom .m-learn-content-wrapper {
+  padding: 1em 2em;
+}
+
+.m-learn-content-wrapper img.img-as-icon {
+  height: 1.25em;
+  line-height: 1.25em;
+  width: auto;
+}
+
+.m-learn-content-wrapper img.img-as-icon,
+.m-learn-content-wrapper i {
+  margin-right: 0.25em;
+}
+
+/* adding class to deprecate the ID -- Linda */
+
+.downloads-boxes p.bottom.code-legal,
+.downloads-boxes .mobile p.bottom.code-legal {
+  left: 0;
+  right: 0;
+  font-size: 0.527em;
+  text-align: center;
+}
+
+.downloads-boxes p.bottom.code-legal {
+  position: absolute;
+}
+
+.downloads-boxes .mobile p.bottom.code-legal {
+  position: relative;
+}
+
+.downloads-boxes p.bottom.code-legal {
+  bottom: 40px;
+  margin: 0 auto;
+}
+
+.downloads .fusion-one-fourth.boxes,
+.downloads .fusion-one-fourth.boxes-lower,
+#downloads-boxes .fusion-one-fourth.boxes,
+#downloads-boxes .fusion-one-fourth.boxes-lower,
+.downloads-boxes .fusion-one-fourth.boxes,
+.downloads-boxes .fusion-one-fourth.boxes-lower {
+  margin-bottom: 0px !important;
+  background-color: rgba(255, 255, 255, 0.83);
+  margin-right: 2%;
+  width: 23.0%;
+}
+
+#downloads-boxes .col-md-4,
+#downloads-boxes .col-lg-4,
+.downloads-boxes .col-md-4,
+.downloads-boxes .col-lg-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.downloads .fusion-one-fourth.boxes,
+#downloads-boxes .fusion-one-fourth.boxes,
+.downloads-boxes .fusion-one-fourth.boxes {
+  min-height: 270px;
+  margin-top: 25px !important;
+}
+
+.downloads .fusion-one-fourth.boxes-lower,
+#downloads-boxes .fusion-one-fourth.boxes-lower,
+.downloads-boxes .fusion-one-fourth.boxes-lower {
+  margin-top: 0px !important;
+}
+
+.downloads .boxes .fusion-column-wrapper,
+#downloads-boxes .boxes .fusion-column-wrapper,
+.downloads-boxes .boxes .fusion-column-wrapper {
+  padding: 25px 25px 0 25px !important;
+}
+
+.downloads .boxes-lower .fusion-column-wrapper,
+#downloads-boxes .boxes-lower .fusion-column-wrapper,
+.downloads-boxes .boxes-lower .fusion-column-wrapper {
+  padding: 0px 25px 50px 25px !important;
+}
+
+.downloads .boxes-lower .fusion-separator.sep-none,
+#downloads-boxes .boxes-lower .fusion-separator.sep-none,
+.downloads-boxes .boxes-lower .fusion-separator.sep-none {
+  margin-top: 30px !important;
+}
+
+#downloads-boxes.fusion-content-boxes,
+.downloads-boxes.fusion-content-boxes {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  /* height: 100%; */
+}
+
+#downloads-boxes.fusion-content-boxes .fusion-column,
+.downloads-boxes.fusion-content-boxes .fusion-column {
+  margin-bottom: 20px;
+  display: table-cell;
+  height: 100%;
+  float: left;
+}
+
+/* .downloads.mac .fusion-content-boxes.content-boxes-icon-on-top .content-box-column-4 .heading {
+    margin-top: 44px;
+} */
+
+#downloads-boxes.fusion-content-boxes.content-boxes-icon-on-top .content-container,
+.downloads-boxes.fusion-content-boxes.content-boxes-icon-on-top .content-container {
+  padding-bottom: 95px;
+}
+
+#downloads-boxes .content-wrapper-background,
+.downloads-boxes .content-wrapper-background {
+  background-color: rgba(255, 255, 255, 0.83);
+  padding: 50px 30px;
+  text-align: center;
+  height: 100%;
+  min-height: 475px;
+}
+
+.downloads #downloads-boxes .absolute,
+#downloads-boxes .absolute,
+.downloads .downloads-boxes .absolute,
+.downloads-boxes .absolute {
+  position: absolute;
+  bottom: 35px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.downloads #downloads-boxes .absolute .fusion-button-wrapper,
+#downloads-boxes .absolute .fusion-button-wrapper,
+.downloads .downloads-boxes .absolute .fusion-button-wrapper,
+.downloads-boxes .absolute .fusion-button-wrapper {
+  display: inline-block;
+  width: 76%;
+}
+
+#downloads-boxes h2,
+.downloads-boxes h2 {
+  color: #333;
+  font-size: 1.55em !important;
+  width: 99%;
+  /* breaks the title on line 1 to 2 lines */
+}
+
+#downloads-boxes p,
+.downloads-boxes p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+.mac #downloads-boxes .fusion-imageframe,
+.mac .downloads-boxes .fusion-imageframe {
+  margin-bottom: -3px;
+}
+
+.fusion-tabs .nav-tabs li .tab-link {
+  transition-property: none;
+}
+/*--Support Articles Template--*/
+.page-template-support-articles #main, .single-sup_2017 #main,
+.single-sup_2015 #main, .single-sup_vs2017 #main, 
+.single-sup_vs2015 #main, .single-sup_tfs #main
+ {
+  padding:0 !important;
+}
+/*--Support Articles Buttons in Contact us -- */
+@media only screen and (max-width: 1300px){
+  #TopLevel button{
+    width:45% !important;
+    margin: 10px 15px !important;
+}
+}
+@media only screen and (max-width: 768px){
+#TopLevel button{
+  width:90% !important;
+  margin: 10px auto !important;
+}
+}
+
+/**
+ * BEGIN VSTS Pricing locked styles
+ * Re-evaluate these rules after avadaupdate
+ * post-team-services_pricing is
+ **/
+
+.post-team-services_pricing #main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.post-team-services_pricing .dash-under {
+  cursor: help;
+  border-bottom: 1px dashed rgba(98, 98, 98, 0.5);
+}
+
+.post-team-services_pricing.post-content a {
+  font-family: 'MS-Font-Segoe', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+}
+
+.post-team-services_pricing.post-content h1,
+.post-team-services_pricing.post-content h2,
+.post-team-services_pricing.post-content p,
+.post-team-services_pricing.post-content div,
+.post-team-services_pricing.post-content li,
+.post-team-services_pricing.post-content span {
+  /* override all other fonts for now */
+  font-family: 'MS-Font-Segoe', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+.post-team-services_pricing.post-content hr {
+  color: rgba(51, 51, 51, 0.5);
+  /* for IE */
+  background-color: rgba(51, 51, 51, 0.5);
+  /* for Mozilla, Opera */
+  height: 1px;
+  width: 90%;
+}
+
+.post-team-services_pricing.post-content h3 {
+  cursor: default;
+  /* vscom.min.css is making h3's use pointer for some reason */
+}
+
+.post-team-services_pricing.post-content .bold,
+.post-team-services_pricing.post-content .bolder,
+.post-team-services_pricing.post-content strong,
+.post-team-services_pricing.post-content a.fusion-button,
+.post-team-services_pricing.post-content a.fusion-button span,
+#pricing-data-2017 .heading h2,
+.post-team-services_pricing.post-content .integer-part,
+.post-team-services_pricing.post-content h3,
+.post-team-services_pricing.post-content h4 {
+  font-family: 'MS-Font-Segoe-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.post-team-services_pricing.post-content p.bolder {
+  font-weight: 700;
+}
+
+.post-team-services_pricing .lightgray {
+  color: rgb(102, 102, 102);
+}
+
+.post-team-services_pricing.post-content h1 {
+  font-size: 46px !important;
+}
+
+.post-team-services_pricing.post-content h2 {
+  font-size: 36px !important;
+}
+
+.post-team-services_pricing .smaller {
+  font-size: 18px !important;
+}
+
+.post-team-services_pricing.post-content li {
+  line-height: 1.5;
+}
+
+.post-team-services_pricing .divtable {
+  box-sizing: border-box;
+  width: 100%;
+  /*padding: 1em;*/
+}
+
+.post-team-services_pricing .divrow {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.post-team-services_pricing .divrow:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.post-team-services_pricing .divrow:nth-child(even) {
+  padding-bottom: 1.5em;
+}
+
+.post-team-services_pricing .divrow:last-child {
+  padding-bottom: 0;
+}
+
+.post-team-services_pricing .divrow .divcol {
+  box-sizing: border-box;
+  width: 33%;
+  float: left;
+}
+
+.post-team-services_pricing .divrow .colspan-2 {
+  width: 66%;
+  padding: 0.5em;
+}
+
+.post-team-services_pricing .divrow .colspan-3 {
+  width: 100%;
+}
+
+.post-team-services_pricing .divcol p {
+  margin: 0;
+  padding: 0;
+}
+
+#pricing-2017 .heading,
+#pricing-child-2017 .content-box-column-last h2 {
+  text-align: center;
+}
+
+#pricing-child-2017 h2 {
+  font-size: 30px;
+  line-height: 1 !important;
+}
+
+#pricing-data-2017 .heading h2,
+#vsts-priceslider-output h3,
+.post-team-services_pricing h4 {
+  font-size: 20px !important;
+}
+
+.blue,
+#pricing-data-2017 .heading h2,
+#vsts-priceslider-output h3 {
+  color: #1e73be !important;
+}
+
+#pricing-data-2017 .heading h2,
+#vsts-priceslider-output h3,
+#pricing-data-2017 h4 {
+  font-weight: 700;
+}
+
+.post-team-services_pricing.post-content p.subtitle {
+  display: block;
+  width: 60%;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+.post-team-services_pricing .fusion-fullwidth.fullwidth-box {
+  padding: 75px 8% !important;
+  display: block !important;
+}
+
+.post-team-services_pricing .fusion-content-boxes.content-boxes-clean-horizontal .content-box-column {
+  border: 0 !important;
+}
+
+.post-team-services_pricing .content-boxes.product-boxes,
+.post-team-services_pricing .content-boxes.split-boxes {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  /*height: 100%;*/
+  margin: 0 auto;
+}
+
+.post-team-services_pricing .content-boxes.split-boxes {
+  height: auto;
+  border: 0;
+}
+
+.post-team-services_pricing .content-boxes.fusion-columns-2.split-boxes {
+  width: 50%;
+}
+
+.post-team-services_pricing .content-boxes.fusion-columns-3.split-boxes {
+  width: 90%;
+}
+
+.post-team-services_pricing .content-boxes.product-boxes .fusion-separator,
+.post-team-services_pricing .content-boxes.product-boxes .fusion-separator {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.post-team-services_pricing .content-boxes .split-boxes {
+  background-color: #fff;
+  border-left: 2px #f0f0f0 solid;
+  border-bottom: 2px #f0f0f0 solid;
+  border-right: 2px #f0f0f0 solid;
+  padding: 0px !important;
+  margin-top: 30px;
+}
+
+.post-team-services_pricing .no-disc {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+  font-size: 18px;
+  font-family: "MS-Font-Segoe", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 30px;
+  padding: 0;
+}
+
+.post-team-services_pricing .fusion-button-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 0 0;
+  font-family: 'MS-Font-Segoe-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.post-team-services_pricing .fusion-button-wrapper a {
+  min-height: 36px;
+  min-width: 100px;
+}
+
+.post-team-services_pricing .split-boxes .fusion-button-wrapper {
+  margin-left: 30px;
+}
+
+.post-team-services_pricing .fusion-button {
+  padding: 8px 20px;
+}
+
+.post-team-services_pricing .fusion-button-text {
+  font-size: 14px !important;
+  margin-left: 0 !important;
+}
+
+#pricing-2017 {
+  padding: 3% 8% 1% 8% !important;
+}
+
+/* #pricing-child-2017 specific styles */
+
+#pricing-child-2017 .content-box-column-last {
+  border: 0;
+}
+
+#pricing-child-2017 .content-box-column-last .content-wrapper-background {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#pricing-child-2017 .content-box-column-last .heading {
+  display: none;
+}
+
+#pricing-child-2017 .content-box-column-last .border-wrapper {
+  border: 1px solid #fff;
+  padding: 30px;
+}
+
+#pricing-child-2017 .content-box-column-last .asterisk-text {
+  margin-top: 1em;
+}
+
+#pricing-child-2017 .content-box-column-last .border-wrapper p {
+  padding: 1.5em 2em 1em 2em;
+}
+
+#pricing-child-2017 span.fusion-button-text {
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
+
+/* #pricing-child-2017 is where the select defined below lives */
+
+.post-team-services_pricing .total-users-dropdown {
+  border: 0 !important;
+  /*Removes border*/
+  -webkit-appearance: none;
+  /*Removes default chrome and safari style*/
+  -moz-appearance: none;
+  /* Removes Default Firefox style*/
+  background: transparent;
+  text-align: left;
+  text-align-last: left;
+  font-family: 'MS-Font-Segoe', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+  height: auto;
+  color: rgb(51, 51, 51);
+  padding-left: 3px;
+}
+
+.post-team-services_pricing .dropdown-wrapper {
+  border: 0;
+  width: 7em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border: 1px solid rgba(98, 98, 98, 0.5);
+}
+
+.post-team-services_pricing .dropdown-wrapper:after {
+  content: "\2335";
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  pointer-events: none;
+  box-sizing: border-box;
+  padding: 0 3px 3px 3px;
+  border-left: 1px solid rgba(98, 98, 98, 0.5);
+  height: 100%;
+  top: 0;
+}
+
+/* CAUTION: IE hackery ahead */
+
+.post-team-services_pricing .total-users-dropdown::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+
+#pricing-graphic-2017 ul {
+  padding: 0;
+}
+
+#pricing-graphic-2017 ul li {
+  list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+
+.post-team-services_pricing .image-align {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.post-team-services_pricing .text-align {
+  text-align: left;
+}
+
+#vsts-priceslider-info ul li {
+  margin-top: 10px;
+}
+
+#vsts-priceslider-info ul li:first-child {
+  margin-top: 0;
+}
+
+#vsts-priceslider-2017 .fusion-pricing-table .fusion-panel {
+  overflow: visible;
+}
+
+#vsts-priceslider-info {
+  padding-left: 15px;
+  margin-top: 0 !important;
+}
+
+#vsts-priceslider-output .sep-boxed-pricing .panel-heading,
+#vsts-priceslider-output .sep-boxed-pricing .panel-heading h3 {
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+#vsts-priceslider-output .fusion-pricing-table .panel-heading {
+  display: none;
+}
+
+#vsts-priceslider-output .fusion-pricing-table .list-group-item {
+  display: none;
+  position: relative;
+  padding: 0px;
+  background: none;
+  border-radius: 0;
+  border-top: none;
+  text-align: left;
+}
+
+#vsts-priceslider-output .fusion-pricing-table .panel-body {
+  padding: 1px;
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+#vsts-priceslider-output .sep-boxed-pricing .panel-body .price .currency {
+  top: 0px;
+  font-size: 20px;
+  font-family: 'MS-Font-Segoe-Regular';
+  color: rgb(52, 52, 52);
+}
+
+#vsts-priceslider-output .sep-boxed-pricing .panel-body .price .integer-part {
+  font-family: 'MS-Font-Segoe-Regular';
+  font-size: 20px;
+}
+
+#vsts-priceslider-output .sep-boxed-pricing .panel-body .price .time {
+  font-size: 14px;
+  position: relative;
+  font-style: normal;
+  font-family: 'MS-Font-Segoe-Regular';
+  color: rgb(52, 52, 52);
+}
+
+#vsts-priceslider-output li.list-group-item.normal-row {
+  display: none !important;
+}
+
+#vsts-priceslider-output .sep-boxed-pricing .panel-container {
+  padding: 9px 0;
+  background-color: #f0f0f0 !important;
+}
+
+/**
+* Module .pricing-form
+: contains .pricing-slider
+* this segment should not be bound to the page, as it is already bound
+* to being a specific form component.  the styles could still be clarified
+* and brought into BASE>LAYOUT>THEME order
+**/
+
+.pricing-form {
+  margin: 40px 0 20px 0;
+}
+
+.pricing-form output {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: default;
+  display: inline-block;
+  font-family: 'MS-Font-Segoe';
+  height: 26px;
+  left: 0;
+  line-height: 24px;
+  margin-left: 0 !important;
+  position: absolute;
+  text-align: center;
+  width: auto;
+  top: -36px !important;
+  color: rgb(51, 51, 51);
+}
+
+.pricing-form output:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #f0f0f0;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+  position: absolute;
+  top: 100%;
+  width: 0
+}
+
+.pricing-form label {
+  width: 100%;
+  display: block;
+  text-align: right;
+  font-family: 'MS-Font-Segoe-Regular';
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.pricing-slider:after,
+.pricing-slider:before {
+  color: #f0f0f0;
+  font-size: 13px;
+  position: absolute;
+  top: 20px;
+  display: none;
+}
+
+.pricing-slider {
+  height: 35px;
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.pricing-slider:focus {
+  border-style: solid;
+  border-color: #0067B8;
+  border-width: 1px;
+}
+
+.pricing-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  /* animate: 0.2s; unknown property */
+  box-shadow: 0px 0px 0px #000000;
+  background: #0067b8;
+  border-radius: 20px;
+  border: 0px solid #010101;
+}
+
+.pricing-slider::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000031;
+  border: 3px solid #C7C7C7;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11.5px;
+}
+
+.pricing-slider:focus::-webkit-slider-runnable-track {
+  background: #0067b8;
+}
+
+.pricing-slider::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  /* animate: 0.2s; unknown property */
+  box-shadow: 0px 0px 0px #000000;
+  background: #0067b8;
+  border-radius: 20px;
+  border: 0px solid #010101;
+}
+
+.pricing-slider::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000031;
+  border: 3px solid #C7C7C7;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.pricing-slider::-ms-track {
+  width: 100%;
+  height: 6px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+.pricing-slider::-ms-fill-lower {
+  background: #0067b8;
+  border: 0px solid #010101;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.pricing-slider::-ms-fill-upper {
+  background: #C7C7C7;
+  border: 0px solid #010101;
+  border-radius: 40px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.pricing-slider::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000031;
+  border: 3px solid #C7C7C7;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.pricing-slider:focus::-ms-fill-lower {
+  background: #0067b8;
+}
+
+.pricing-slider:focus::-ms-fill-upper {
+  background: #C7C7C7;
+}
+
+.ua-edge .pricing-form,
+.ua-ie .pricingform {
+  margin: 45px 0 !important;
+}
+
+/**
+* END module .pricing-form
+**/
+
+#vsts-priceslider-output .panel-heading,
+#vsts-priceslider-output .pricing-row,
+#vsts-priceslider-output .fusion-pricingtable-column {
+  cursor: default !important;
+}
+
+#vsts-priceslider-output .fusion-button-wrapper {
+  width: auto;
+  min-width: 130px;
+}
+
+#vsts-priceslider-output .fusion-button-wrapper a {
+  font-size: 14px;
+}
+
+#vsts-priceslider-output .fusion-button-wrapper i {
+  font-size: 18px !important;
+}
+
+/* #pricing-data-2017 specific styles */
+
+.post-team-services_pricing .midspacer {
+  margin-bottom: 70px;
+}
+
+#pricing-data-2017 .split-boxes.content-boxes .heading,
+#pricing-data-2017 .split-boxes.content-boxes h4,
+#pricing-data-2017 .split-boxes.content-boxes h2,
+#pricing-data-2017 .split-boxes.content-boxes .content-container p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#vs-new-subscriber table h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#pricing-data-2017 .heading,
+#pricing-data-2017 h4 {
+  margin-bottom: 15px;
+}
+
+#vsts-do-more .heading,
+#vs-new-subscriber .content-box-column-1 h4,
+#vs-new-subscriber p.blue.bold,
+#vs-new-subscriber p.blue.bolder,
+#vs-new-subscriber .one-third h4 {
+  padding-top: 20px;
+}
+
+#vs-new-subscriber p.blue.bolder {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+#vs-new-subscriber .content-box-column-1 h4,
+#vs-new-subscriber .one-third h4 {
+  font-size: 28px !important;
+  margin-bottom: 20px;
+}
+
+#vs-new-subscriber p.blue.bold {
+  margin-bottom: 0;
+}
+
+#vs-new-subscriber h3 {
+  font-family: 'MS-Font-Segoe', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 30px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+#pricing-data-2017 .content-boxes.split-boxes .col {
+  padding: 0;
+}
+
+#pricing-data-2017 .fusion-button-wrapper {
+  width: auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#vs-new-subscriber .content-container p {
+  margin: 0;
+  padding: 0;
+}
+
+#vs-new-subscriber .content-box-column-1 .content-container p {
+  padding-bottom: 20px;
+}
+
+#vs-new-subscriber .content-box-column-2 .content-wrapper-background {
+  min-height: auto !important;
+}
+
+#pricing-data-2017 table {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  border-spacing: 15px 0;
+  border-collapse: separate;
+  /*height: 100%;*/
+  table-layout: fixed;
+  color: rgb(102, 102, 102);
+}
+
+#pricing-data-2017 tr {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+#pricing-data-2017 td,
+#pricing-data-2017 th {
+  width: 31.333333%;
+  border: 2px solid rgb(240, 240, 240);
+  font-weight: 400;
+  font-size: 18px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+#vsts-do-more th p:last-child {
+  margin-bottom: 10px;
+}
+
+#pricing-data-2017 .split-boxes.content-boxes .content-container .fusion-button-wrapper {
+  margin-top: 5px;
+}
+
+#pricing-data-2017 td.one-third {
+  width: 31.333333%;
+}
+
+#pricing-data-2017 td.two-thirds {
+  width: 62.666666%;
+  height: 100%;
+}
+
+#pricing-data-2017 td.two-thirds table {
+  width: 100%;
+  height: 100%;
+}
+
+#pricing-data-2017 .gray {
+  background-color: rgb(240, 240, 240);
+  border-bottom: 0;
+  padding: 0 25px;
+  text-align: left;
+}
+
+#pricing-data-2017 td.gray {
+  padding-bottom: 30px;
+}
+
+#vsts-do-more .mobile .heading-link {
+  text-align: left;
+}
+
+#vs-new-subscriber .content-container h2 {
+  padding-top: 20px;
+}
+
+/* this rule allows the button tr -> td to have margin bottom */
+
+#vsts-do-more tr:first-child td.gray {
+  padding: 0 30px;
+}
+
+#pricing-data-2017 .white {
+  background-color: #FFF;
+  border-top: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+#pricing-data-2017 .no-style {
+  background-color: transparent !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+#pricing-data-2017 .no-style table {
+  width: 100%;
+  margin-bottom: 0;
+  border-spacing: 0;
+}
+
+#pricing-data-2017 .no-style .gray {
+  width: auto;
+}
+
+#pricing-data-2017 .no-style .spacer {
+  width: 1px !important;
+  background-color: transparent;
+  border: 0;
+  padding: 7.5px;
+}
+
+#toTop:focus {
+  outline: 1px solid #fff;
+  outline-offset: -3px;
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+  .post-team-services_pricing .sep-boxed-pricing {
+    margin-bottom: 0;
+    /* overriding styles.css here */
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-team-services_pricing .content-boxes .col-lg-4,
+  .post-team-services_pricing .content-boxes .col-lg-6 {
+    margin-left: 15px;
+    border: 0;
+  }
+  .post-team-services_pricing .content-boxes .col-lg-4 {
+    width: 31%;
+    padding-left: 0 !important;
+  }
+  .post-team-services_pricing .content-boxes .col-lg-6 {
+    width: 47%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .post-team-services_pricing .content-boxes .col-md-4,
+  .post-team-services_pricing .content-boxes .col-md-6 {
+    margin-left: 3%;
+    border: 0;
+    float: left;
+  }
+  .post-team-services_pricing .content-boxes .content-box-column-1 {
+    margin-left: 0;
+  }
+  .post-team-services_pricing .content-boxes .col-md-4 {
+    width: 31%;
+    padding-left: 0 !important;
+  }
+  .post-team-services_pricing .content-boxes .col-md-6 {
+    width: 47%;
+  }
+  .post-team-services_pricing .content-boxes .col {
+    min-height: 230px;
+  }
+}
+
+/* iPad Pro - portrait */
+
+@media only screen and (max-width: 1366px) and (min-width: 1024px) and (orientation: portrait) {
+  .post-team-services_pricing .content-boxes .col {
+    min-height: 232px !important;
+  }
+}
+
+/* iPad Pro - landscape */
+
+@media only screen and (max-width: 1366px) and (min-width: 1024px) and (orientation: landscape) {
+  .post-team-services_pricing .content-boxes .col {
+    min-height: 234px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #pricing-2017 {
+    padding: 45px 8% 1% 8% !important;
+  }
+  #vs-new-subscriber .split-boxes.content-boxes h2 {
+    margin: 20px;
+  }
+  #vsts-do-more .split-boxes.content-boxes h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #content {
+    margin-bottom: 0;
+  }
+  .post-team-services_pricing .fusion-fullwidth.fullwidth-box,
+  .post-team-services_pricing .fullwidth-box.top-hero,
+  .post-team-services_pricing .fullwidth-box.final-cta {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .post-team-services_pricing .content-boxes .content-box-column {
+    margin-bottom: 50px;
+  }
+  .post-team-services_pricing .content-boxes .content-box-column-last {
+    margin-bottom: 0px;
+  }
+  .post-team-services_pricing .image-align,
+  .post-team-services_pricing .text-align,
+  .post-team-services_pricing .fusion-title.fusion-sep-none .title-heading-left {
+    text-align: center;
+    padding-right: 0;
+  }
+  .post-team-services_pricing .midspacer {
+    margin-bottom: 60px;
+  }
+  .post-team-services_pricing.post-content p.subtitle {
+    width: 100%;
+  }
+  .post-team-services_pricing h1,
+  .post-team-services_pricing h2 {
+    line-height: 1.25 !important;
+  }
+  .post-team-services_pricing .sep-boxed-pricing {
+    margin-bottom: 0;
+    /* overriding styles.css here */
+  }
+  .post-team-services_pricing.post-content p.subtitle {
+    margin: 30px 0 40px 0;
+  }
+  .post-team-services_pricing .content-boxes.fusion-columns-3.split-boxes {
+    width: 100%;
+  }
+  .post-team-services_pricing .content-boxes .col-lg-4 {
+    padding-left: 0 !important;
+  }
+  #vsts-priceslider-output .fusion-button-wrapper {
+    width: auto;
+    min-width: 100px;
+  }
+}
+
+/* iPad & iPad Mini - portrait */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+  .post-team-services_pricing .content-boxes .col {
+    min-height: 326px;
+  }
+}
+
+/* iPad & iPad Mini - landscape */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+  .post-team-services_pricing .content-boxes .col {
+    min-height: 260px;
+  }
+  .post-team-services_pricing .col-md-3 {
+    width: 50%;
+  }
+}
+
+/* slider media queries for phones only */
+
+@media only screen and (max-width: 450px) {
+  .post-team-services_pricing .divtable {
+    padding: 1em 0;
+  }
+  .post-team-services_pricing .divrow .colspan-2 {
+    width: 56%;
+    margin-left: 10%;
+  }
+}
+
+.post-team-services_pricing .live_person_button {
+  display: none;
+}
+
+.post-team-services_pricing .disable-chat-button span,
+.post-team-services_pricing .disable-chat-button i {
+  color: #AAA !important;
+}
+
+.post-team-services_pricing .disable-chat-button {
+  cursor: not-allowed !important;
+  background-color: #EDEDED !important;
+}
+
+.post-team-services_pricing .dropdown-arrow {
+  display: none;
+}
+
+/**
+ * END VSTS Pricing locked styles
+ * Re-evaluate these rules post-update
+ **/
+
+@media (max-width: 800px) {
+  .fusion-fullwidth.fusion-mobile-bg-cover {
+    background-position: 0 50% !important;
+    /* Must be !important to override inline style. */
+  }
+}
+
+@media (min-width: 768px) {
+  .fusion-tabs.horizontal-tabs.clean .nav-tabs li .tab-link {
+    margin-right: 0;
+  }
+}

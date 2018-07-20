@@ -1,0 +1,15 @@
+/*************** all en.css content is now in global.css ***********************************/
+.vscom-slide-text {
+  max-width: 34rem;
+}
+
+.vscom-slide-text p{
+  max-width:28em;
+}
+@media screen and (min-width: 1400px){
+  .downloads-boxes p.bottom.code-legal {
+  bottom: 28px !important;
+  margin: 0 auto;
+  width:80%;
+  }
+  }
